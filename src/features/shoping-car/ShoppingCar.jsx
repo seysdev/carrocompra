@@ -9,7 +9,7 @@ import StepFour from "./components/StepFour";
 import style from "./shoppingCar.module.css";
 
 function ShoppingCar() {
-  const [step, setState] = useState(3);
+  const [step, setState] = useState(1);
 
   return (
     <>
