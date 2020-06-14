@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/carrocompra/static/css/main.2725f96e.chunk.css",
-    "main.js": "/carrocompra/static/js/main.32464a75.chunk.js",
-    "main.js.map": "/carrocompra/static/js/main.32464a75.chunk.js.map",
+    "main.js": "/carrocompra/static/js/main.d3fca8df.chunk.js",
+    "main.js.map": "/carrocompra/static/js/main.d3fca8df.chunk.js.map",
     "runtime-main.js": "/carrocompra/static/js/runtime-main.cd99a6e6.js",
     "runtime-main.js.map": "/carrocompra/static/js/runtime-main.cd99a6e6.js.map",
     "static/css/2.e94183ad.chunk.css": "/carrocompra/static/css/2.e94183ad.chunk.css",
     "static/js/2.e6a1e912.chunk.js": "/carrocompra/static/js/2.e6a1e912.chunk.js",
     "static/js/2.e6a1e912.chunk.js.map": "/carrocompra/static/js/2.e6a1e912.chunk.js.map",
     "index.html": "/carrocompra/index.html",
-    "precache-manifest.a91e712ec1d82e2c3b498b086b7bcc34.js": "/carrocompra/precache-manifest.a91e712ec1d82e2c3b498b086b7bcc34.js",
+    "precache-manifest.de26c14bd1a9c7c801f5d88d880883a5.js": "/carrocompra/precache-manifest.de26c14bd1a9c7c801f5d88d880883a5.js",
     "service-worker.js": "/carrocompra/service-worker.js",
     "static/css/2.e94183ad.chunk.css.map": "/carrocompra/static/css/2.e94183ad.chunk.css.map",
     "static/css/main.2725f96e.chunk.css.map": "/carrocompra/static/css/main.2725f96e.chunk.css.map",
@@ -28,6 +28,6 @@
     "static/css/2.e94183ad.chunk.css",
     "static/js/2.e6a1e912.chunk.js",
     "static/css/main.2725f96e.chunk.css",
-    "static/js/main.32464a75.chunk.js"
+    "static/js/main.d3fca8df.chunk.js"
   ]
 }
