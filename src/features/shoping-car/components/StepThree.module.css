@@ -1,0 +1,73 @@
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.h2 {
+  font-size: 30px;
+}
+
+.h3 {
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+.facturacion {
+  padding: 20px;
+  border: 1px solid #f00;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: #f5f5f5;
+}
+
+.condiciones {
+  padding: 20px;
+  border: 1px solid #f00;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+}
+
+.input {
+  margin: 15px 0;
+}
+
+.span {
+  padding-left: 10px;
+}
+
+.facturacion:hover,
+.condiciones:hover {
+  box-shadow: 0 0 10px #cdcdcd;
+}
+
+.img {
+  max-width: 120px;
+}
+
+.ul {
+  list-style: none;
+}
+
+.ul li {
+  margin-bottom: 20px;
+}
+
+.ul li:last-child {
+  margin-bottom: 0;
+}
+
+.divLeft {
+  margin-left: 15px;
+}
+
+.innerLeft {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-left: 25px;
+}
+
+.lineHeight {
+  line-height: 2.2;
+}

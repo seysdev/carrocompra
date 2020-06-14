@@ -1,0 +1,40 @@
+$font-family: (
+  default: arial,
+  title: Roboto,
+);
+
+$colors-branding: (
+  primary: #ff8246,
+  secondary: #373a6d,
+  complementary: #6fc2d0,
+  complementary-two: #beeef7,
+);
+
+$colors-semantic: (
+  success: green,
+  error: red,
+  danger: orange,
+);
+
+$colors-neutrals: (
+  white: #fff,
+  black: #000,
+  grey: grey,
+);
+
+$font-sizes: (
+  base: 62.5%,
+  default: 1.3,
+  h1: 3.2,
+  h2: 2.8,
+  h3: 2.2,
+  h4: 1.8,
+  h5: 1.6,
+  h6: 1.4,
+  p: 1.3,
+);
+
+$spacing: (
+  padding: 20px,
+  margin: 20px,
+);

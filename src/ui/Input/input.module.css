@@ -1,0 +1,10 @@
+.input {
+  padding: 10px;
+  border: 1px solid #afafaf;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.fullWidth {
+  width: 100%;
+}

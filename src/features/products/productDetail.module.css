@@ -1,0 +1,32 @@
+.productDetail p {
+  font-size: 1.8rem;
+}
+
+.productDetail h3 {
+  font-size: 1.6rem;
+}
+
+.productDetail li {
+  margin-bottom: 20px;
+  color: #969696;
+}
+
+.arrowTop {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  padding: 20px 0 0 0;
+}
+
+.productDetail .customP {
+  font-size: 1.3rem;
+}
+
+/*sm*/
+@media (max-width: 640px) {
+  .arrowTop {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 40px;
+  }
+}

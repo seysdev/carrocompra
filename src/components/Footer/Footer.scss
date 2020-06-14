@@ -1,0 +1,7 @@
+@import "../../assets/styles/variables";
+
+.footer {
+  background-color: map-get($colors-branding, complementary);
+  padding: map-get($spacing, padding);
+  color: map-get($colors-neutrals, white);
+}

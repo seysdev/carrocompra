@@ -1,0 +1,329 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "producto": "Chuleta Cerdo",
+      "caracteristicas": "Calidad OK",
+      "lista_precios": [
+        {
+          "precioventa": "20.70",
+          "precioinsumo": "20.20",
+          "precioespecial": "20.50"
+        }
+      ],
+      "producto_fotos": [
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "producto": "Cuy Supremo",
+      "caracteristicas": "Saludable",
+      "lista_precios": [
+        {
+          "precioventa": "18.70",
+          "precioinsumo": "18.50",
+          "precioespecial": "18.90"
+        }
+      ],
+      "producto_fotos": [
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "producto": "Bisteck Pollo",
+      "caracteristicas": "Bueno",
+      "lista_precios": [
+        {
+          "precioventa": "15.70",
+          "precioinsumo": "15.40",
+          "precioespecial": "15.60"
+        }
+      ],
+      "producto_fotos": [
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "producto": "Carne Pato",
+      "caracteristicas": "Dominguero",
+      "lista_precios": [
+        {
+          "precioventa": "20.70",
+          "precioinsumo": "20.40",
+          "precioespecial": "20.60"
+        }
+      ],
+      "producto_fotos": [
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "producto": "Torta de Chocolate",
+      "caracteristicas": "Postre",
+      "lista_precios": [
+        {
+          "precioventa": "10.80",
+          "precioinsumo": "10.50",
+          "precioespecial": "10.90"
+        }
+      ],
+      "producto_fotos": [
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "producto": "Helado de Vainilla",
+      "caracteristicas": "Verano",
+      "lista_precios": [
+        {
+          "precioventa": "12.80",
+          "precioinsumo": "12.00",
+          "precioespecial": "12.20"
+        }
+      ],
+      "producto_fotos": [
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        }
+      ]
+    }
+  ],
+  "product-detail": [
+    {
+      "id": 1,
+      "producto": "Chuleta Cerdo",
+      "caracteristicas": "Calidad OK",
+      "descripcion": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",
+      "categoria": "http://127.0.0.1:8000/apis_carrito/List_CategoriasProductos/2/?format=json",
+      "lista_precios": [
+        {
+          "precioventa": "20.70",
+          "precioinsumo": "20.20",
+          "precioespecial": "20.50"
+        }
+      ],
+      "producto_fotos": [
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "producto": "Chuleta Cerdo",
+      "caracteristicas": "Calidad OK",
+      "descripcion": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",
+      "categoria": "http://127.0.0.1:8000/apis_carrito/List_CategoriasProductos/2/?format=json",
+      "lista_precios": [
+        {
+          "precioventa": "20.70",
+          "precioinsumo": "20.20",
+          "precioespecial": "20.50"
+        }
+      ],
+      "producto_fotos": [
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        }
+      ]
+    },{
+      "id": 3,
+      "producto": "Chuleta Cerdo",
+      "caracteristicas": "Calidad OK",
+      "descripcion": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",
+      "categoria": "http://127.0.0.1:8000/apis_carrito/List_CategoriasProductos/2/?format=json",
+      "lista_precios": [
+        {
+          "precioventa": "20.70",
+          "precioinsumo": "20.20",
+          "precioespecial": "20.50"
+        }
+      ],
+      "producto_fotos": [
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "producto": "Chuleta Cerdo",
+      "caracteristicas": "Calidad OK",
+      "descripcion": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",
+      "categoria": "http://127.0.0.1:8000/apis_carrito/List_CategoriasProductos/2/?format=json",
+      "lista_precios": [
+        {
+          "precioventa": "20.70",
+          "precioinsumo": "20.20",
+          "precioespecial": "20.50"
+        }
+      ],
+      "producto_fotos": [
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "producto": "Chuleta Cerdo",
+      "caracteristicas": "Calidad OK",
+      "descripcion": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",
+      "categoria": "http://127.0.0.1:8000/apis_carrito/List_CategoriasProductos/2/?format=json",
+      "lista_precios": [
+        {
+          "precioventa": "20.70",
+          "precioinsumo": "20.20",
+          "precioespecial": "20.50"
+        }
+      ],
+      "producto_fotos": [
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "producto": "Chuleta Cerdo",
+      "caracteristicas": "Calidad OK",
+      "descripcion": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.",
+      "categoria": "http://127.0.0.1:8000/apis_carrito/List_CategoriasProductos/2/?format=json",
+      "lista_precios": [
+        {
+          "precioventa": "20.70",
+          "precioinsumo": "20.20",
+          "precioespecial": "20.50"
+        }
+      ],
+      "producto_fotos": [
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        },
+        {
+          "photo": "https://www.elindependiente.com/wp-content/uploads/2019/08/Depositphotos_8156139_l-2015-min-1440x808.jpg"
+        }
+      ]
+    }
+  ]
+}

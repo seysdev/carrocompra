@@ -1,0 +1,33 @@
+@import "../../assets/styles/variables";
+
+.header {
+  background-color: map-get($colors-branding, complementary);
+  color: map-get($colors-neutrals, white);
+
+  &__row {
+    display: flex;
+    align-items: center;
+  }
+
+  &__navShopping {
+    margin-left: 20px;
+  }
+
+  &__top {
+    padding: 20px;
+  }
+
+  &__bottom {
+    padding: 8px;
+    background-color: map-get($colors-branding, complementary-two);
+  }
+
+  /*md*/
+  @media (max-width: 840px) {
+    & {
+      position: fixed;
+      width: 100%;
+      z-index: 10;
+    }
+  }
+}

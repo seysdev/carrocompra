@@ -1,0 +1,63 @@
+@import "../../assets/styles/variables";
+
+.nav-user {
+  position: relative;
+
+  button {
+    display: flex;
+    align-items: center;
+    padding: 6px 10px;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    color: #fff;
+    border: 0;
+    background: transparent;
+
+    cursor: pointer;
+    border-radius: 6px;
+  }
+
+  svg.user {
+    margin-right: 10px;
+  }
+
+  svg.arrow {
+    margin-left: 10px;
+  }
+
+  ul {
+    position: absolute;
+    top: 100%;
+    margin-top: 4px;
+    width: 100%;
+
+    font-size: 12px;
+
+    color: #000;
+    background: map-get($colors-branding, secondary);
+    border-radius: 4px;
+    overflow: hidden;
+
+    li {
+    }
+
+    a {
+      display: block;
+      padding: 10px;
+
+      color: #fff;
+
+      &:hover {
+        background: map-get($colors-branding, primary);
+      }
+    }
+  }
+
+  &.is-active {
+    button {
+      background-color: map-get($colors-branding, secondary);
+    }
+  }
+}

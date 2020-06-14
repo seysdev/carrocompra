@@ -1,0 +1,42 @@
+
+.login {
+  max-width: 310px;
+  width: 100%;
+  margin: 120px auto 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+  color: #757575;
+}
+
+.flex {
+  display: flex;
+}
+
+.aItems {
+  align-items: center;
+}
+
+/*md*/
+@media(max-width: 840px) {
+
+}
+
+/*sm*/
+@media (max-width: 640px) {
+
+}
+
+/*xs*/
+@media (max-width: 540px) {
+
+}
+
+/*tiny*/
+@media (max-width: 440px) {
+
+}

@@ -1,0 +1,46 @@
+.cardProduct {
+  font-family: "Roboto";
+  transition: all 0.3s;
+}
+
+.cardProduct:hover {
+  box-shadow: 0 0 10px #cdcdcd;
+}
+
+.figure {
+  padding: 10px;
+}
+
+.img {
+  width: 100%;
+}
+
+.btn {
+  padding: 10px;
+}
+
+.cardProduct {
+  border: 1px solid #beeef7;
+}
+
+.text {
+  padding: 10px;
+  border-top: 1px solid #beeef7;
+  font-size: 13px;
+}
+
+.title {
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.description {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.currency {
+  font-weight: 600;
+  margin-bottom: 20px;
+}

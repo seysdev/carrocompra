@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: map-get($font-sizes, base);
+}
+
+body {
+  font-family: map-get($font-family, default);
+  font-size: #{map-get($font-sizes, default)}rem;
+  color: map-get($colors-neutrals, black);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:focus,
+button:focus,
+textarea:focus,
+input:focus {
+  outline: 0;
+}
+
+b {
+  font-weight: bold;
+}

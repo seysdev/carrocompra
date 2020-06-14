@@ -1,0 +1,22 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.grid input {
+  margin: 0;
+}
+
+.grid label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.top {
+  margin-bottom: 40px;
+}
+
+.column2 {
+  grid-column-end: span 2;
+}

@@ -1,0 +1,27 @@
+.table {
+  width: 100%;
+  text-align: left;
+
+  th,
+  td {
+    padding: 10px;
+    vertical-align: middle;
+  }
+
+  th {
+    background: #c4c4c4;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  td {
+    font-size: 1.3rem;
+    border-bottom: 1px solid black;
+  }
+}
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}

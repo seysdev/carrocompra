@@ -1,0 +1,16 @@
+.navShoppingCar {
+  position: relative;
+}
+
+.counter {
+  position: absolute;
+  right: -8px;
+  top: -6px;
+  background-color: #ff8246;
+  border-radius: 10px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  line-height: 15px;
+  font-size: 10px;
+}

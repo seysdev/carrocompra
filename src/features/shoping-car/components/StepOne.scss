@@ -1,0 +1,21 @@
+.stepOne {
+  .table-row {
+    background: #cdcdcd;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  .table-step {
+    display: none;
+  }
+
+  @media (max-width: 840px) {
+    .table-responsive {
+      display: none;
+    }
+
+    .table-step {
+      display: block;
+    }
+  }
+}

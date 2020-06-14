@@ -1,0 +1,27 @@
+.counter {
+  display: flex;
+}
+
+.btn {
+  padding: 10px 15px;
+  background-color: #373a6d;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.4rem;
+  cursor: pointer;
+  border: 1px solid #373a6d;
+}
+
+.input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cdcdcd;
+  margin: 0 10px;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.btn.disabled {
+  cursor: default;
+  opacity: 0.8;
+}

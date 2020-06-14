@@ -1,0 +1,41 @@
+.categories {
+  display: flex;
+  font-family: "Roboto";
+}
+
+.items {
+  position: relative;
+  color: #373a6d;
+  display: flex;
+  align-items: center;
+}
+
+.items:last-child .bar {
+  display: none;
+}
+
+.bar {
+  margin: 0 6px;
+  display: block;
+}
+
+/* .items::after {
+    content: '\\';
+    position: absolute;
+    right: -8px;
+    top: 0;
+} */
+
+.link {
+  /* padding: 0 10px; */
+  padding: 6px;
+  border-radius: 30px;
+  font-size: 14px;
+  display: block;
+}
+
+.linkActive {
+  background-color: #ff8246;
+  color: #fff;
+  margin-right: 6px;
+}

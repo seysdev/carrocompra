@@ -1,0 +1,12 @@
+@import "../../assets/styles/variables";
+
+.main {
+  padding: map-get($spacing, padding);
+}
+
+/*md*/
+@media (max-width: 840px) {
+  .main {
+    padding-top: 138px;
+  }
+}
