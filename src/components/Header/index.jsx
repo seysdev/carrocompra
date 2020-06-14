@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 import classNames from "classnames";
 import { logout } from "../../features/auth/store/actions";
+import { Link } from "react-router-dom";
 
 import NavUser from "../NavUser";
 import NavShoppingCar from "../NavShoppingCar";
@@ -14,7 +15,7 @@ function Header({ className }) {
   const history = useHistory();
   const user = useSelector((state) => state.auth.user);
   const [categories, setCategories] = useState([]);
-  
+
   useEffect(() => {
     fetch(
       "https://carallenglish.herokuapp.com/apis_category/List_All_Categorys/"
@@ -26,7 +27,7 @@ function Header({ className }) {
     <header className={classNames("header", className)}>
       <div className="container">
         <div className="header__top flex jc-between ai-center">
-          <a href="/">CARRITO DE COMPRA</a>
+          <Link to={"/"}>CARRITO DE COMPRA</Link>
           <div className="header__row">
             <NavUser
               text={user ? user : "Ingresar"}
@@ -43,7 +44,10 @@ function Header({ className }) {
                         },
                       },
                     ]
-                  : [{ href: "/login", text: "Log in", cb: () => {} }, { href: "/register", text: "Registrar", cb: () => {} }]
+                  : [
+                      { href: "/login", text: "Log in", cb: () => {} },
+                      { href: "/register", text: "Registrar", cb: () => {} },
+                    ]
               }
             />
             <NavShoppingCar className="header__navShopping" />
