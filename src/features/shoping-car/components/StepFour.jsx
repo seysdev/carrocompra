@@ -1,14 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import { resetState } from "../store/actions";
+import { resetState, disableStep } from "../store/actions";
 import style from "./StepFour.module.css";
 import check from "../../../assets/images/check1.jpg";
 import { NavLink } from "react-router-dom";
-import {
-  StepperAction,
-  StepperContent,
-  StepperContext,
-} from "react-material-stepper";
+import { StepperContent, StepperContext } from "react-material-stepper";
 import { useSelector } from "react-redux";
 import Button from "../../../ui/Button";
 
@@ -19,6 +15,7 @@ function StepFour() {
   const [productsCurrent] = useState(products);
   useEffect(() => {
     resolve(true);
+    dispatch(disableStep(true));
     dispatch(resetState());
   }, []);
 
@@ -30,7 +27,7 @@ function StepFour() {
           <p className={style.p}>Los productos que has comprado son:</p>
           <ul className={style.ul}>
             {productsCurrent.map((product) => (
-              <li style={{ textAlign: "center" }}>
+              <li key={product.id} style={{ textAlign: "center" }}>
                 <img
                   width="120"
                   src={product.product_photos[0].photo1}
@@ -43,9 +40,24 @@ function StepFour() {
           <figure>
             <img src={check} className={style.img} alt="niubiz" />
           </figure>
-          <NavLink primary exact to={"/"}>
-            <Button primary>Ver Productos </Button>
-          </NavLink>
+
+          <h2>
+            Muchas gracias por tu compra, puedes continuar viendo <br />
+            <NavLink
+              style={{
+                color: "#ff8246",
+                marginTop: "20px",
+                display: "inline-block",
+                textDecoration: "underline",
+              }}
+              primary
+              exact
+              to={"/"}
+            >
+              mas productos
+            </NavLink>
+          </h2>
+
           {/* <Button
             primary
             onClick={() => {

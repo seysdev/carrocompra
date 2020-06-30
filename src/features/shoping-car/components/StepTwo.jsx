@@ -58,20 +58,24 @@ function StepTwo() {
       onSubmit={onSubmitTwo}
       actions={
         <React.Fragment>
-          <StepperAction disabled={!isLogin} type="submit">
+          <StepperAction
+            style={{ backgroundColor: "#fa8146" }}
+            disabled={!isLogin}
+            type="submit"
+          >
             SIGUIENTE
           </StepperAction>
         </React.Fragment>
       }
     >
-      <div>
-        <form className={style.form}>
-          <div class={style.top}>
+      <>
+        <div className={style.form}>
+          <div className={style.top}>
             <label>¿Necesitas Factura? *</label>
             <br />
             <br />
             <Select
-              value={userValues.needBill}
+              value={valuesForm.needBill}
               name="factura"
               items={[
                 { text: "No", value: false },
@@ -84,21 +88,14 @@ function StepTwo() {
                 })
               }
               required
-            >
-              {/* <option value="0" selected>
-                No
-              </option>
-              <option value="1">Si</option> */}
-            </Select>
+            ></Select>
           </div>
           <div className={style.grid}>
             <div>
-              <label className={style.label} for="">
-                Nombre:{" "}
-              </label>
+              <label className={style.label}>Nombre: </label>
               <Input
                 required
-                value={userValues.name}
+                value={userValues.name || valuesForm.name}
                 className={style.input}
                 placeholder="Nombre"
                 fullWidth
@@ -111,11 +108,9 @@ function StepTwo() {
               />
             </div>
             <div>
-              <label className={style.label} for="">
-                Apellido Paterno:{" "}
-              </label>
+              <label className={style.label}>Apellido Paterno: </label>
               <Input
-                value={userValues.patherLastname}
+                value={userValues.patherLastname || valuesForm.patherLastname}
                 className={style.input}
                 placeholder="Apellido Paterno"
                 fullWidth
@@ -128,11 +123,9 @@ function StepTwo() {
               />
             </div>
             <div>
-              <label className={style.label} for="">
-                Apellido Materno:
-              </label>
+              <label className={style.label}>Apellido Materno:</label>
               <Input
-                value={userValues.motherLastname}
+                value={userValues.motherLastname || valuesForm.motherLastname}
                 className={style.input}
                 placeholder="Apellido Materno"
                 fullWidth
@@ -147,7 +140,7 @@ function StepTwo() {
             <div>
               <label className={style.label}>Departamento: </label>
               <Select
-                value={userValues.deparment}
+                value={userValues.department || valuesForm.department}
                 fullWidth
                 name="department"
                 items={[
@@ -162,40 +155,12 @@ function StepTwo() {
                     department: e.target.value,
                   })
                 }
-              >
-                {/* <option value="Lima" selected>
-                  Lima
-                </option>
-                <option value="Amazonas">Amazonas</option>
-                <option value="Ancash">Ancash</option>
-                <option value="Apurimac">Apurimac</option>
-                <option value="Arequipa">Arequipa</option>
-                <option value="Ayacucho">Ayacucho</option>
-                <option value="Cajamarca">Cajamarca</option>
-                <option value="Callao">Callao</option>
-                <option value="Cusco">Cusco</option>
-                <option value="Huancavelica">Huancavelica</option>
-                <option value="Huanuco">Huanuco</option>
-                <option value="Ica">Ica</option>
-                <option value="Junin">Junin</option>
-                <option value="La Libertad">La Libertad</option>
-                <option value="Lambayeque">Lambayeque</option>
-                <option value="Loreto">Loreto</option>
-                <option value="Madre De Dios">Madre De Dios</option>
-                <option value="Moquegua">Moquegua</option>
-                <option value="Pasco">Pasco</option>
-                <option value="Piura">Piura</option>
-                <option value="Puno">Puno</option>
-                <option value="San Martin">San Martin</option>
-                <option value="Tacna">Tacna</option>
-                <option value="Tumbes">Tumbes</option>
-                <option value="Ucayali">Ucayali</option> */}
-              </Select>
+              ></Select>
             </div>
             <div>
               <label className={style.label}>Provincias: </label>
               <Select
-                value={userValues.province}
+                value={userValues.province || valuesForm.province}
                 fullWidth
                 name="provincias"
                 items={[
@@ -210,40 +175,12 @@ function StepTwo() {
                     province: e.target.value,
                   })
                 }
-              >
-                {/* <option value="Lima" selected>
-                  Lima
-                </option>
-                <option value="Amazonas">Amazonas</option>
-                <option value="Ancash">Ancash</option>
-                <option value="Apurimac">Apurimac</option>
-                <option value="Arequipa">Arequipa</option>
-                <option value="Ayacucho">Ayacucho</option>
-                <option value="Cajamarca">Cajamarca</option>
-                <option value="Callao">Callao</option>
-                <option value="Cusco">Cusco</option>
-                <option value="Huancavelica">Huancavelica</option>
-                <option value="Huanuco">Huanuco</option>
-                <option value="Ica">Ica</option>
-                <option value="Junin">Junin</option>
-                <option value="La Libertad">La Libertad</option>
-                <option value="Lambayeque">Lambayeque</option>
-                <option value="Loreto">Loreto</option>
-                <option value="Madre De Dios">Madre De Dios</option>
-                <option value="Moquegua">Moquegua</option>
-                <option value="Pasco">Pasco</option>
-                <option value="Piura">Piura</option>
-                <option value="Puno">Puno</option>
-                <option value="San Martin">San Martin</option>
-                <option value="Tacna">Tacna</option>
-                <option value="Tumbes">Tumbes</option>
-                <option value="Ucayali">Ucayali</option> */}
-              </Select>
+              ></Select>
             </div>
             <div>
               <label className={style.label}>Distrito: </label>
               <Select
-                value={userValues.district}
+                value={userValues.district || valuesForm.district}
                 fullWidth
                 name="district"
                 items={[
@@ -258,41 +195,12 @@ function StepTwo() {
                     district: e.target.value,
                   })
                 }
-              >
-                {/* <option value="Lima" selected>
-                  Por favor selecione un distrito
-                </option>
-                <option value="Amazonas">Amazonas</option>
-                <option value="Lima">Lima</option>
-                <option value="Ancash">Ancash</option>
-                <option value="Apurimac">Apurimac</option>
-                <option value="Arequipa">Arequipa</option>
-                <option value="Ayacucho">Ayacucho</option>
-                <option value="Cajamarca">Cajamarca</option>
-                <option value="Callao">Callao</option>
-                <option value="Cusco">Cusco</option>
-                <option value="Huancavelica">Huancavelica</option>
-                <option value="Huanuco">Huanuco</option>
-                <option value="Ica">Ica</option>
-                <option value="Junin">Junin</option>
-                <option value="La Libertad">La Libertad</option>
-                <option value="Lambayeque">Lambayeque</option>
-                <option value="Loreto">Loreto</option>
-                <option value="Madre De Dios">Madre De Dios</option>
-                <option value="Moquegua">Moquegua</option>
-                <option value="Pasco">Pasco</option>
-                <option value="Piura">Piura</option>
-                <option value="Puno">Puno</option>
-                <option value="San Martin">San Martin</option>
-                <option value="Tacna">Tacna</option>
-                <option value="Tumbes">Tumbes</option>
-                <option value="Ucayali">Ucayali</option> */}
-              </Select>
+              ></Select>
             </div>
             <div>
               <label className={style.label}>Vía: </label>
               <Select
-                value={userValues.via}
+                value={userValues.via || valuesForm.via}
                 fullWidth
                 name="via"
                 items={[
@@ -306,21 +214,12 @@ function StepTwo() {
                     via: e.target.value,
                   })
                 }
-              >
-                {/* <option value="Avenida" selected>
-                  Avenida
-                </option>
-                <option value="Calle">Calle</option>
-                <option value="Jiron">Jiron</option>
-                <option value="Urbanizacion">Urbanizacion</option> */}
-              </Select>
+              ></Select>
             </div>
-            <div class={style.column2}>
-              <label className={style.label} for="">
-                Nombre de Vía y Numero:{" "}
-              </label>
+            <div className={style.column2}>
+              <label className={style.label}>Nombre de Vía y Numero: </label>
               <Input
-                value={userValues.nameVia}
+                value={userValues.nameVia || valuesForm.nameVia}
                 className={style.input}
                 placeholder="Ej: Petit Thouars 5273"
                 fullWidth
@@ -348,19 +247,14 @@ function StepTwo() {
                     livingPlace: e.target.value,
                   })
                 }
-              >
-                {/* <option value="Departamento" selected>
-                  Departamento
-                </option>
-                <option value="Casa">Casa</option> */}
-              </Select>
+              ></Select>
             </div>
-            <div class={style.column2}>
-              <label className={style.label} for="">
-                Numero Depto/Interior:{" "}
-              </label>
+            <div className={style.column2}>
+              <label className={style.label}>Numero Depto/Interior: </label>
               <Input
-                value={userValues.numberLivingPlace}
+                value={
+                  userValues.numberLivingPlace || valuesForm.numberLivingPlace
+                }
                 className={style.input}
                 placeholder="Ej: Depto 501"
                 fullWidth
@@ -375,7 +269,7 @@ function StepTwo() {
             <div>
               <label className={style.label}>Zona: </label>
               <Select
-                value={userValues.zone}
+                value={userValues.zone || valuesForm.zone}
                 fullWidth
                 name="zona"
                 items={[
@@ -390,21 +284,12 @@ function StepTwo() {
                     zone: e.target.value,
                   })
                 }
-              >
-                {/* <option value="Lima" selected>
-                  Seleccione la zona
-                </option>
-                <option value="Manzana">Manzana</option>
-                <option value="Lote">Lote</option>
-                <option value="Zona">Zona</option> */}
-              </Select>
+              ></Select>
             </div>
             <div>
-              <label className={style.label} for="">
-                Nombre de Zona
-              </label>
+              <label className={style.label}>Nombre de Zona</label>
               <Input
-                value={userValues.nameZone}
+                value={userValues.nameZone || valuesForm.nameZone}
                 className={style.input}
                 placeholder="Manzana/Lote/Zona"
                 fullWidth
@@ -417,11 +302,9 @@ function StepTwo() {
               />
             </div>
             <div>
-              <label className={style.label} for="">
-                Numero de Contacto
-              </label>
+              <label className={style.label}>Numero de Contacto</label>
               <Input
-                value={userValues.contactNumber}
+                value={userValues.contactNumber || valuesForm.contactNumber}
                 className={style.input}
                 placeholder="Ej: 993541937"
                 fullWidth
@@ -434,7 +317,7 @@ function StepTwo() {
               />
             </div>
           </div>
-        </form>
+        </div>
         <div className={style.rate}>
           <p>Tarifa de Envio</p>
           <p>S/.69.00</p>
@@ -444,7 +327,7 @@ function StepTwo() {
           <WhatsappIcon />
           <span className="ml-4">993541937</span>
         </div>
-      </div>
+      </>
     </StepperContent>
   );
 }

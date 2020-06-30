@@ -34,6 +34,7 @@ function StepOne({ watch = () => {}, vertical = false }) {
       actions={
         <React.Fragment>
           <StepperAction
+            style={{ backgroundColor: "#fa8146" }}
             disabled={!products.length}
             align={vertical ? "left" : "right"}
             type="submit"
@@ -48,22 +49,28 @@ function StepOne({ watch = () => {}, vertical = false }) {
           <div className="table-responsive">
             <table className="table">
               <thead>
-                <th>Producto</th>
-                <th>Metodos de Entrega</th>
-                <th>Cantidad</th>
-                <th>Precio</th>
-                <th>Total</th>
-                <th>Accion</th>
+                <tr>
+                  <td>Producto</td>
+                  <td>Metodos de Entrega</td>
+                  <td>Cantidad</td>
+                  <td>Precio</td>
+                  <td>Total</td>
+                  <td>Accion</td>
+                </tr>
               </thead>
               <tbody>
                 {products.map((product) => {
                   return (
-                    <tr>
+                    <tr key={product.id}>
                       <td>
                         {product.producto}
                         <img
                           width="160"
-                          src={product.product_photos[0].photo1}
+                          src={
+                            !!product.product_photos.length
+                              ? product.product_photos[0].photo1
+                              : "http://lorempixel.com/400/200/food/"
+                          }
                           alt="Detalle de imagen"
                         />
                       </td>
@@ -76,8 +83,10 @@ function StepOne({ watch = () => {}, vertical = false }) {
                       <td>
                         <Counter
                           initialValue={product.total}
-                          watch={(value) => {
-                            setTotalProducts(value);
+                          watch={(total) => {
+                            setTotalProducts(total);
+                            // console.log("total", total);
+                            // dispatch(addProduct(product, total));
                           }}
                         />
                         <br />
@@ -112,114 +121,64 @@ function StepOne({ watch = () => {}, vertical = false }) {
 
           <div className="table-step">
             <div className="table-body">
-              <div className="table-row">
-                <div>
-                  <h2>Fruta picada en trozos</h2>
-                  <img
-                    src={require("../../../assets/images/item.png")}
-                    alt="Detalle de imagen"
-                  />
-                </div>
-                <div className="flex ai-center jc-between">
-                  <ul>
-                    <li>Despacho a domicilio</li>
-                    <li>Retiro en tienda</li>
-                  </ul>
-                  <div>
-                    <Counter />
+              {products.map((product) => {
+                return (
+                  <div className="table-row">
+                    <div>
+                      <img
+                        width="160"
+                        src={
+                          !!product.product_photos.length
+                            ? product.product_photos[0].photo1
+                            : "http://lorempixel.com/400/200/food/"
+                        }
+                        alt="Detalle de imagen"
+                      />
+                    </div>
+                    <div className="flex ai-center jc-between">
+                      <div>
+                        <div>Despacho a domicilio</div>
+                        <br />
+                        <div>Retiro en tienda</div>
+                      </div>
+                      <div>
+                        <Counter />
+                        <br />
+                        <Button
+                          fullWidth
+                          primary
+                          onClick={() => {
+                            dispatch(addProduct(product, totalProducts));
+                          }}
+                        >
+                          Agregar
+                        </Button>
+                      </div>
+                    </div>
+                    <div className="flex ai-center jc-between">
+                      <div className="price">
+                        <div>
+                          <span>
+                            <b>Precio: </b>
+                          </span>
+                          S/{product.list_price[0].pricesale}
+                        </div>
+                        <br />
+                        <div>
+                          <span>
+                            <b>Total por producto: </b>
+                          </span>
+                          S/
+                          {product.priceTotal.toFixed(2)}
+                        </div>
+                      </div>
+                      <div className="text-center">
+                        <IconDelete />
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div className="flex ai-center jc-between">
-                  <div className="price">
-                    <div>S/80.00</div>
-                    <div>S/80.00</div>
-                  </div>
-                  <div className="text-center">
-                    <IconDelete />
-                  </div>
-                </div>
-              </div>
-              <div className="table-row">
-                <div>
-                  <h2>Fruta picada en trozos</h2>
-                  <img
-                    src={require("../../../assets/images/item.png")}
-                    alt="Detalle de imagen"
-                  />
-                </div>
-                <div className="flex ai-center jc-between">
-                  <ul>
-                    <li>Despacho a domicilio</li>
-                    <li>Retiro en tienda</li>
-                  </ul>
-                  <div>
-                    <Counter />
-                  </div>
-                </div>
-                <div className="flex ai-center jc-between">
-                  <div className="price">
-                    <div>S/80.00</div>
-                    <div>S/80.00</div>
-                  </div>
-                  <div className="text-center">
-                    <IconDelete />
-                  </div>
-                </div>
-              </div>
-              <div className="table-row">
-                <div>
-                  <h2>Fruta picada en trozos</h2>
-                  <img
-                    src={require("../../../assets/images/item.png")}
-                    alt="Detalle de imagen"
-                  />
-                </div>
-                <div className="flex ai-center jc-between">
-                  <ul>
-                    <li>Despacho a domicilio</li>
-                    <li>Retiro en tienda</li>
-                  </ul>
-                  <div>
-                    <Counter />
-                  </div>
-                </div>
-                <div className="flex ai-center jc-between">
-                  <div className="price">
-                    <div>S/80.00</div>
-                    <div>S/80.00</div>
-                  </div>
-                  <div className="text-center">
-                    <IconDelete />
-                  </div>
-                </div>
-              </div>
-              <div className="table-row">
-                <div>
-                  <h2>Fruta picada en trozos</h2>
-                  <img
-                    src={require("../../../assets/images/item.png")}
-                    alt="Detalle de imagen"
-                  />
-                </div>
-                <div className="flex ai-center jc-between">
-                  <ul>
-                    <li>Despacho a domicilio</li>
-                    <li>Retiro en tienda</li>
-                  </ul>
-                  <div>
-                    <Counter />
-                  </div>
-                </div>
-                <div className="flex ai-center jc-between">
-                  <div className="price">
-                    <div>S/80.00</div>
-                    <div>S/80.00</div>
-                  </div>
-                  <div className="text-center">
-                    <IconDelete />
-                  </div>
-                </div>
-              </div>
+                );
+              })}
             </div>
           </div>
           <div className="text-right mt-20">

@@ -1,4 +1,4 @@
-import { ADD_PRODUCT, REMOVE_PRODUCT, SET_FORM_STEP, RESET_STATE } from "./constans";
+import { ADD_PRODUCT, REMOVE_PRODUCT, SET_FORM_STEP, RESET_STATE, DISABLE_STEP } from "./constans";
 
 function addProduct(payload, total = 1) {
   return {
@@ -31,4 +31,11 @@ function resetState() {
   }
 }
 
-export { addProduct, removeProduct, setFormStep, resetState };
+function disableStep(payload) {
+  return {
+    type: DISABLE_STEP,
+    payload
+  }
+}
+
+export { addProduct, removeProduct, setFormStep, resetState, disableStep };

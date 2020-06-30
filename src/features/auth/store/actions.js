@@ -7,7 +7,7 @@ import {
 
 function registerUser(payload) {
   return function (dispatch) {
-    fetch("https://carallenglish.herokuapp.com/apis_user/registeruser/", {
+    fetch("https://apiscodigo.herokuapp.com/apis_user/registeruser/", {
       method: "POST",
       body: JSON.stringify(payload),
       headers: {
@@ -24,7 +24,7 @@ function registerUser(payload) {
 
 function login(payload) {
   return function (dispatch) {
-    fetch("https://carallenglish.herokuapp.com/apis_user/authenticate/", {
+    fetch("https://apiscodigo.herokuapp.com/apis_user/authenticate/", {
       method: "POST",
       body: JSON.stringify(payload),
       headers: {
@@ -34,6 +34,7 @@ function login(payload) {
       .then((response) => response.json())
       .then((response) => {
         if (response.error) {
+          alert(response.error);
           dispatch(setStatusLogin(response));
           dispatch(setStatusToken(""));
         } else {

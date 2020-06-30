@@ -10,28 +10,28 @@ function Counter({ max, watch = () => {}, className, initialValue = 1 }) {
   }
 
   function decrement() {
-    if (value < 1) {
-      btnDecrement.current.setAttribute("disabled", true);
-      btnDecrement.current.classList.add("disabled");
-    } else if (value > 1) {
-      btnDecrement.current.classList.remove("disabled");
-      btnDecrement.current.removeAttribute("disabled");
+    if (value > 0) {
       setValue(value - 1);
     }
   }
 
   useEffect(() => {
     watch(value);
-  });
+  }, [value]);
 
   return (
     <div className={`${style.counter} ${className}`}>
+      <button
+        type="button"
+        ref={btnDecrement}
+        onClick={decrement}
+        className={style.btn}
+      >
+        -
+      </button>
+      <input value={value} className={style.input} type="text" readOnly />
       <button type="button" onClick={increment} className={style.btn}>
         +
-      </button>
-      <input value={value} className={style.input} type="text" />
-      <button  type="button" ref={btnDecrement} onClick={decrement} className={style.btn}>
-        -
       </button>
     </div>
   );

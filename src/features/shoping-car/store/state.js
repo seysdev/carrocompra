@@ -6,6 +6,7 @@ const initialState = {
     step_three: {},
     step_four: {},
   },
+  disabledStep: false
 };
 
 export default initialState;

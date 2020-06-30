@@ -5,6 +5,7 @@ import { login } from "./store/actions";
 import Input from "../../ui/Input";
 import Button from "../../ui/Button";
 import style from "./Login.module.css";
+import { Link } from "react-router-dom";
 
 function Login() {
   const dispatch = useDispatch();
@@ -23,7 +24,8 @@ function Login() {
 
   useEffect(() => {
     if (statusLogin) {
-      history.replace('/')
+      console.log('history', history)
+      history.replace("/");
     }
   }, [statusLogin]);
 
@@ -64,6 +66,11 @@ function Login() {
           Login
         </Button>
       </form>
+      <div style={{ textAlign: "center", padding: "20px 10px" }}>
+        <Link style={{ color: "#ff8246" }} to="/register">
+          Registrarse
+        </Link>
+      </div>
     </div>
   );
 }

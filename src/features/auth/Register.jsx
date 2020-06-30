@@ -7,6 +7,7 @@ import Button from "../../ui/Button";
 import style from "./Register.module.css";
 import { registerUser } from "./store/actions";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Register() {
   // const { register, handleSubmit } = useForm();
@@ -107,6 +108,11 @@ function Register() {
           </div>
         </div>
       </form>
+      <div style={{ textAlign: "center", padding: "20px 10px" }}>
+        <Link style={{ color: "#ff8246" }} to="/login">
+          Login
+        </Link>
+      </div>
     </div>
   );
 }

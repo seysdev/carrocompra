@@ -3,6 +3,7 @@ import {
   REMOVE_PRODUCT,
   SET_FORM_STEP,
   RESET_STATE,
+  DISABLE_STEP,
 } from "./constans";
 
 import initialState from "./state";
@@ -37,16 +38,12 @@ function ShoppingCarReducer(state = initialState, action) {
       }
 
     case REMOVE_PRODUCT:
-      state.productsAdded.filter((product) => {
-        console.log(product);
-        console.log(action.payload);
-        //product.id !== action.payload.id
-      });
       return Object.assign({}, state, {
         productsAdded: state.productsAdded.filter((product) => {
           return product.id !== action.payload.id;
         }),
       });
+    // return state;
 
     case SET_FORM_STEP:
       return Object.assign({}, state, {
@@ -58,7 +55,12 @@ function ShoppingCarReducer(state = initialState, action) {
 
     case RESET_STATE:
       return Object.assign({}, initialState);
-      
+
+    case DISABLE_STEP:
+      return Object.assign({}, state, {
+        disabledStep: action.payload,
+      });
+
     default:
       return state;
   }

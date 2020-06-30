@@ -28,39 +28,39 @@ function ProductDetail({ addCar = () => {} }) {
     dispatch(getProductDetail(detail));
   }, [detail]);
 
-  // const images = [
-  //   {
-  //     original: "https://picsum.photos/id/1018/1000/600/",
-  //     thumbnail: "https://picsum.photos/id/1018/250/150/",
-  //   },
-  //   {
-  //     original: "https://picsum.photos/id/1015/1000/600/",
-  //     thumbnail: "https://picsum.photos/id/1015/250/150/",
-  //   },
-  //   {
-  //     original: "https://picsum.photos/id/1019/1000/600/",
-  //     thumbnail: "https://picsum.photos/id/1019/250/150/",
-  //   },
-  // ];
+  const imagesLorem = [
+    {
+      original: "https://picsum.photos/id/1018/1000/600/",
+      thumbnail: "https://picsum.photos/id/1018/250/150/",
+    },
+    {
+      original: "https://picsum.photos/id/1015/1000/600/",
+      thumbnail: "https://picsum.photos/id/1015/250/150/",
+    },
+    {
+      original: "https://picsum.photos/id/1019/1000/600/",
+      thumbnail: "https://picsum.photos/id/1019/250/150/",
+    },
+  ];
 
-  const images =
-    !!product_photos && !!product_photos.length
-      ? product_photos.map((photo, id) => {
-          return {
-            original: photo[`photo${id}`],
-            thumbnail: photo,
-          };
-        })
-      : false;
+  // const images =
+  //   !!product_photos && !!product_photos.length
+  //     ? product_photos.map((photo, id) => {
+  //         return {
+  //           original: photo[`photo${id}`],
+  //           thumbnail: photo,
+  //         };
+  //       })
+  //     : imagesLorem;
 
   return (
     <div className={style.productDetail}>
       {Object.entries(currentProduct).length > 0 ? (
         <>
           <div className={style.arrowTop}>
-            {images && (
+            {imagesLorem && (
               <div>
-                <ImageGallery items={images} />
+                <ImageGallery items={imagesLorem} />
               </div>
             )}
             <div>
@@ -102,7 +102,7 @@ function ProductDetail({ addCar = () => {} }) {
               </div>
             </div>
           </div>
-          <div clasName={style.arrowBottom}>
+          <div className={style.arrowBottom}>
             <h2>Descripcion del producto</h2>
             <p className={style.customP}>{description}</p>
             <br />

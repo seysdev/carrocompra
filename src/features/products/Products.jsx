@@ -13,7 +13,6 @@ function Products() {
   let { id } = useParams();
 
   useEffect(() => {
-    console.log("id", id);
     if (!id) {
       dispatch(getProducts());
     } else {
