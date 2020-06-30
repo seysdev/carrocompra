@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9bdcdac74e7d819698741df59a5d6a18",
+    "revision": "eb9db7f169e7bd8a0c9700a8bdd6a7a7",
     "url": "/carrocompra/index.html"
   },
   {
-    "revision": "7c7578dd6df052146700",
+    "revision": "459a0cfb7d36f1927e5d",
     "url": "/carrocompra/static/css/2.e94183ad.chunk.css"
   },
   {
-    "revision": "a1c6f33dfaf9f7f25f8f",
-    "url": "/carrocompra/static/css/main.2725f96e.chunk.css"
+    "revision": "7812fc42b4ed99363d05",
+    "url": "/carrocompra/static/css/main.3489c6d1.chunk.css"
   },
   {
-    "revision": "7c7578dd6df052146700",
-    "url": "/carrocompra/static/js/2.8b8cec1d.chunk.js"
+    "revision": "459a0cfb7d36f1927e5d",
+    "url": "/carrocompra/static/js/2.d992f4b9.chunk.js"
   },
   {
     "revision": "9be48472b35189e9c6b1ed6407464107",
-    "url": "/carrocompra/static/js/2.8b8cec1d.chunk.js.LICENSE.txt"
+    "url": "/carrocompra/static/js/2.d992f4b9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a1c6f33dfaf9f7f25f8f",
-    "url": "/carrocompra/static/js/main.f32b3581.chunk.js"
+    "revision": "7812fc42b4ed99363d05",
+    "url": "/carrocompra/static/js/main.64c4d72d.chunk.js"
   },
   {
     "revision": "9db1ff6c1c522d1dff01",
@@ -42,10 +42,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "835a1326839115c49c6ee87395e6a8fb",
     "url": "/carrocompra/static/media/delete.835a1326.svg"
-  },
-  {
-    "revision": "23c43d0bbef4bdfa5a614cb8739656ff",
-    "url": "/carrocompra/static/media/item.23c43d0b.png"
   },
   {
     "revision": "898b54e82d0bb5d4cbd3812cf6b2191d",

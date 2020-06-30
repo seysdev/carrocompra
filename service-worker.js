@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/carrocompra/precache-manifest.b3a86e500d069b6df3f0c4e03ddb3bee.js"
+  "/carrocompra/precache-manifest.da9239557be99f91d0c8b4b6fd549b18.js"
 );
 
 self.addEventListener('message', (event) => {
