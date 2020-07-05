@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/carrocompra/static/css/main.7800f1a4.chunk.css",
-    "main.js": "/carrocompra/static/js/main.fdd8333a.chunk.js",
-    "main.js.map": "/carrocompra/static/js/main.fdd8333a.chunk.js.map",
+    "main.js": "/carrocompra/static/js/main.0163a597.chunk.js",
+    "main.js.map": "/carrocompra/static/js/main.0163a597.chunk.js.map",
     "runtime-main.js": "/carrocompra/static/js/runtime-main.cd99a6e6.js",
     "runtime-main.js.map": "/carrocompra/static/js/runtime-main.cd99a6e6.js.map",
     "static/css/2.e94183ad.chunk.css": "/carrocompra/static/css/2.e94183ad.chunk.css",
-    "static/js/2.d1c7ac68.chunk.js": "/carrocompra/static/js/2.d1c7ac68.chunk.js",
-    "static/js/2.d1c7ac68.chunk.js.map": "/carrocompra/static/js/2.d1c7ac68.chunk.js.map",
+    "static/js/2.f2c42ba0.chunk.js": "/carrocompra/static/js/2.f2c42ba0.chunk.js",
+    "static/js/2.f2c42ba0.chunk.js.map": "/carrocompra/static/js/2.f2c42ba0.chunk.js.map",
     "index.html": "/carrocompra/index.html",
-    "precache-manifest.a5c3555032537fd5fb838f040a254240.js": "/carrocompra/precache-manifest.a5c3555032537fd5fb838f040a254240.js",
+    "precache-manifest.0a507b36d1788a4bcc93c5aebeda618f.js": "/carrocompra/precache-manifest.0a507b36d1788a4bcc93c5aebeda618f.js",
     "service-worker.js": "/carrocompra/service-worker.js",
     "static/css/2.e94183ad.chunk.css.map": "/carrocompra/static/css/2.e94183ad.chunk.css.map",
     "static/css/main.7800f1a4.chunk.css.map": "/carrocompra/static/css/main.7800f1a4.chunk.css.map",
-    "static/js/2.d1c7ac68.chunk.js.LICENSE.txt": "/carrocompra/static/js/2.d1c7ac68.chunk.js.LICENSE.txt",
+    "static/js/2.f2c42ba0.chunk.js.LICENSE.txt": "/carrocompra/static/js/2.f2c42ba0.chunk.js.LICENSE.txt",
     "static/media/arrow.ff7d2458.svg": "/carrocompra/static/media/arrow.ff7d2458.svg",
     "static/media/car.c95d32a1.svg": "/carrocompra/static/media/car.c95d32a1.svg",
     "static/media/check1.jpg": "/carrocompra/static/media/check1.8690c88b.jpg",
@@ -25,8 +25,8 @@
   "entrypoints": [
     "static/js/runtime-main.cd99a6e6.js",
     "static/css/2.e94183ad.chunk.css",
-    "static/js/2.d1c7ac68.chunk.js",
+    "static/js/2.f2c42ba0.chunk.js",
     "static/css/main.7800f1a4.chunk.css",
-    "static/js/main.fdd8333a.chunk.js"
+    "static/js/main.0163a597.chunk.js"
   ]
 }
