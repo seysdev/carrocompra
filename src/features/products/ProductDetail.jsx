@@ -78,6 +78,7 @@ function ProductDetail({ addCar = () => {} }) {
               <Counter
                 className="mb-20"
                 watch={(response) => {
+                  console.log('response', response)
                   dispatch(addProductQuantity(currentProduct, response.value))
                 }}
                 initialValue={productFound && productFound.total}

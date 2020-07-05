@@ -43,11 +43,24 @@ function ShoppingCarReducer(state = initialState, action) {
         .map((item) => item.id)
         .indexOf(action.payload.id);
 
-      if (index > 0) {
+      if (index >= 0) {
         state.productsAdded[index].total = parseFloat(action.total);
         state.productsAdded[index].priceTotal =
           action.payload.list_price[0].pricesale *
           state.productsAdded[index].total;
+        return Object.assign({}, state, {
+          productsAdded: [...state.productsAdded],
+        });
+      } else {
+        state.productsAdded = [
+          {
+            ...action.payload,
+          },
+        ];
+        state.productsAdded[0].total = parseFloat(action.total);
+        state.productsAdded[0].priceTotal =
+          action.payload.list_price[0].pricesale * state.productsAdded[0].total;
+
         return Object.assign({}, state, {
           productsAdded: [...state.productsAdded],
         });
