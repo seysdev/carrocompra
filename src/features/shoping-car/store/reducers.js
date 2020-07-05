@@ -39,11 +39,15 @@ function ShoppingCarReducer(state = initialState, action) {
       }
 
     case ADD_PRODUCT_QUANTITY: {
+      const found = state.productsAdded.find(
+        (el) => el.id === action.payload.id
+      );
+
       const index = state.productsAdded
         .map((item) => item.id)
         .indexOf(action.payload.id);
 
-      if (index >= 0) {
+      if (found) {
         state.productsAdded[index].total = parseFloat(action.total);
         state.productsAdded[index].priceTotal =
           action.payload.list_price[0].pricesale *
