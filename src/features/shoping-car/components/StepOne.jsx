@@ -85,8 +85,6 @@ function StepOne({ watch = () => {}, vertical = false }) {
                           initialValue={product.total}
                           watch={(total) => {
                             setTotalProducts(total);
-                            // console.log("total", total);
-                            // dispatch(addProduct(product, total));
                           }}
                         />
                         <br />
@@ -142,7 +140,12 @@ function StepOne({ watch = () => {}, vertical = false }) {
                         <div>Retiro en tienda</div>
                       </div>
                       <div>
-                        <Counter />
+                        <Counter
+                          initialValue={product.total}
+                          watch={(total) => {
+                            setTotalProducts(total);
+                          }}
+                        />
                         <br />
                         <Button
                           fullWidth
@@ -173,7 +176,11 @@ function StepOne({ watch = () => {}, vertical = false }) {
                         </div>
                       </div>
                       <div className="text-center">
-                        <IconDelete />
+                        <IconDelete
+                          onClick={() => {
+                            dispatch(removeProduct(product));
+                          }}
+                        />
                       </div>
                     </div>
                   </div>
