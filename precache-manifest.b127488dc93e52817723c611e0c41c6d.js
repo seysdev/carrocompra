@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6c3d392fa1856c52e239a55680992c25",
+    "revision": "5a4b53de28175f05af97efcaf8408485",
     "url": "/carrocompra/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/carrocompra/static/css/2.e94183ad.chunk.css"
   },
   {
-    "revision": "027e0d3e76d2c8b7468d",
+    "revision": "19eaacee3e72fee9dc8e",
     "url": "/carrocompra/static/css/main.7800f1a4.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/carrocompra/static/js/2.d646b074.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "027e0d3e76d2c8b7468d",
-    "url": "/carrocompra/static/js/main.e733e99f.chunk.js"
+    "revision": "19eaacee3e72fee9dc8e",
+    "url": "/carrocompra/static/js/main.de912616.chunk.js"
   },
   {
     "revision": "9db1ff6c1c522d1dff01",
