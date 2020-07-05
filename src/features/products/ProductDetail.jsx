@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getProductDetail } from "./store/actions";
-import { addProduct } from "../shoping-car/store/actions";
+import { addProduct, addProductQuantity } from "../shoping-car/store/actions";
 import { useParams } from "react-router-dom";
 import ImageGallery from "react-image-gallery";
 
@@ -77,21 +77,11 @@ function ProductDetail({ addCar = () => {} }) {
               </h2>
               <Counter
                 className="mb-20"
-                watch={(value) => {
-                  setTotalProducts(value);
+                watch={(response) => {
+                  dispatch(addProductQuantity(currentProduct, response.value))
                 }}
                 initialValue={productFound && productFound.total}
               />
-              <Button
-                className="mb-20"
-                fullWidth
-                primary
-                onClick={() =>
-                  dispatch(addProduct(currentProduct, totalProducts))
-                }
-              >
-                AGREGAR AL CARRITO
-              </Button>
               <div>
                 <h3>Disponibilidad y tiempos de entrega</h3>
                 <ul>

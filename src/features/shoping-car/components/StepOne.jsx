@@ -8,7 +8,11 @@ import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import Counter from "../../../components/Counter";
 import Button from "../../../ui/Button";
-import { addProduct, removeProduct } from "../../shoping-car/store/actions";
+import {
+  addProductQuantity,
+  discountProductQuantity,
+  removeProduct,
+} from "../../shoping-car/store/actions";
 import { ReactComponent as IconDelete } from "../../../assets/images/svg/delete.svg";
 import "./StepOne.scss";
 
@@ -83,12 +87,14 @@ function StepOne({ watch = () => {}, vertical = false }) {
                       <td>
                         <Counter
                           initialValue={product.total}
-                          watch={(total) => {
-                            setTotalProducts(total);
+                          watch={(response) => {
+                            dispatch(
+                              addProductQuantity(product, response.value)
+                            );
                           }}
                         />
                         <br />
-                        <Button
+                        {/* <Button
                           fullWidth
                           primary
                           onClick={() => {
@@ -96,7 +102,7 @@ function StepOne({ watch = () => {}, vertical = false }) {
                           }}
                         >
                           Agregar
-                        </Button>
+                        </Button> */}
                       </td>
                       <td>{product.list_price[0].pricesale}</td>
                       <td>
@@ -121,7 +127,7 @@ function StepOne({ watch = () => {}, vertical = false }) {
             <div className="table-body">
               {products.map((product) => {
                 return (
-                  <div className="table-row">
+                  <div key={product.id} className="table-row">
                     <div>
                       <img
                         width="160"
@@ -142,12 +148,14 @@ function StepOne({ watch = () => {}, vertical = false }) {
                       <div>
                         <Counter
                           initialValue={product.total}
-                          watch={(total) => {
-                            setTotalProducts(total);
+                          watch={(response) => {
+                            dispatch(
+                              addProductQuantity(product, response.value)
+                            );
                           }}
                         />
                         <br />
-                        <Button
+                        {/* <Button
                           fullWidth
                           primary
                           onClick={() => {
@@ -155,7 +163,7 @@ function StepOne({ watch = () => {}, vertical = false }) {
                           }}
                         >
                           Agregar
-                        </Button>
+                        </Button> */}
                       </div>
                     </div>
                     <div className="flex ai-center jc-between">

@@ -4,12 +4,13 @@ import {
   SET_FORM_STEP,
   RESET_STATE,
   DISABLE_STEP,
+  ADD_PRODUCT_QUANTITY,
+  DISCOUNT_PRODUCT_QUANTITY,
 } from "./constans";
 
 import initialState from "./state";
 
 function ShoppingCarReducer(state = initialState, action) {
-  console.log("action", action);
   switch (action.type) {
     case ADD_PRODUCT:
       const found = state.productsAdded.find(
@@ -36,6 +37,21 @@ function ShoppingCarReducer(state = initialState, action) {
           productsAdded: [...state.productsAdded],
         });
       }
+
+    case ADD_PRODUCT_QUANTITY: {
+      console.log('entra aca!!')
+      const index = state.productsAdded
+        .map((item) => item.id)
+        .indexOf(action.payload.id);
+
+      state.productsAdded[index].total = parseFloat(action.total);
+      state.productsAdded[index].priceTotal =
+        action.payload.list_price[0].pricesale *
+        state.productsAdded[index].total;
+      return Object.assign({}, state, {
+        productsAdded: [...state.productsAdded],
+      });
+    }
 
     case REMOVE_PRODUCT:
       return Object.assign({}, state, {
