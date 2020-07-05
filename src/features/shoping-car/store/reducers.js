@@ -39,18 +39,19 @@ function ShoppingCarReducer(state = initialState, action) {
       }
 
     case ADD_PRODUCT_QUANTITY: {
-      console.log('entra aca!!')
       const index = state.productsAdded
         .map((item) => item.id)
         .indexOf(action.payload.id);
 
-      state.productsAdded[index].total = parseFloat(action.total);
-      state.productsAdded[index].priceTotal =
-        action.payload.list_price[0].pricesale *
-        state.productsAdded[index].total;
-      return Object.assign({}, state, {
-        productsAdded: [...state.productsAdded],
-      });
+      if (index > 0) {
+        state.productsAdded[index].total = parseFloat(action.total);
+        state.productsAdded[index].priceTotal =
+          action.payload.list_price[0].pricesale *
+          state.productsAdded[index].total;
+        return Object.assign({}, state, {
+          productsAdded: [...state.productsAdded],
+        });
+      }
     }
 
     case REMOVE_PRODUCT:
