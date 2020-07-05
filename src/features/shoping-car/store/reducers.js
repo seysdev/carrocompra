@@ -56,14 +56,27 @@ function ShoppingCarReducer(state = initialState, action) {
           productsAdded: [...state.productsAdded],
         });
       } else {
-        state.productsAdded = [
-          {
-            ...action.payload,
-          },
-        ];
-        state.productsAdded[0].total = parseFloat(action.total);
-        state.productsAdded[0].priceTotal =
-          action.payload.list_price[0].pricesale * state.productsAdded[0].total;
+        if (!!state.productsAdded.length) {
+          console.log("payload", action.payload);
+          state.productsAdded = [
+            ...state.productsAdded,
+            {
+              ...action.payload,
+              total: parseFloat(action.total),
+              priceTotal: action.total * action.payload.list_price[0].pricesale,
+            },
+          ];
+        } else {
+          state.productsAdded = [
+            {
+              ...action.payload,
+            },
+          ];
+          state.productsAdded[0].total = parseFloat(action.total);
+          state.productsAdded[0].priceTotal =
+            action.payload.list_price[0].pricesale *
+            state.productsAdded[0].total;
+        }
 
         return Object.assign({}, state, {
           productsAdded: [...state.productsAdded],
